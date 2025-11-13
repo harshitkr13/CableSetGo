@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CableSetGo — Admin</title>
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body data-page="admin">
+		<header class="csg-header">
+			<div class="csg-container csg-header-inner">
+				<a class="csg-brand" href="index.html">CableSetGo</a>
+				<nav class="csg-nav">
+					<a href="landing.html" data-i18n="nav.providers">Providers</a>
+					<a href="complaints.html" data-i18n="nav.complaints">Complaints</a>
+				</nav>
+				<div class="csg-lang">
+					<label for="lang-select" data-i18n="nav.language">Language</label>
+					<select id="lang-select">
+						<option value="en">English</option>
+						<option value="hi">हिन्दी</option>
+						<option value="bn">বাংলা</option>
+					</select>
+				</div>
+			</div>
+		</header>
+
+		<main class="csg-container">
+			<section class="csg-grid-2">
+				<div class="csg-card">
+					<h3 data-i18n="admin.users">Users</h3>
+					<div id="admin-users"></div>
+				</div>
+				<div class="csg-card">
+					<h3 data-i18n="admin.providers">Providers</h3>
+					<div id="admin-providers"></div>
+				</div>
+				<div class="csg-card">
+					<h3 data-i18n="admin.tickets">Complaints/Feedback</h3>
+					<div id="admin-tickets"></div>
+				</div>
+			</section>
+			<p id="admin-status" class="csg-status"></p>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+		<script src="assets/js/sysenv.js"></script>
+		<script src="assets/js/supabaseClient.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script src="assets/js/admin.js"></script>
+	</body>
+	</html>
+
+

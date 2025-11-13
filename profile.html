@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CableSetGo — Profile Setup</title>
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body data-page="profile">
+		<header class="csg-header">
+			<div class="csg-container csg-header-inner">
+				<a class="csg-brand" href="index.html">CableSetGo</a>
+				<nav class="csg-nav">
+					<a href="landing.html" data-i18n="nav.providers">Providers</a>
+					<a href="complaints.html" data-i18n="nav.complaints">Complaints</a>
+				</nav>
+				<div class="csg-lang">
+					<label for="lang-select" data-i18n="nav.language">Language</label>
+					<select id="lang-select">
+						<option value="en">English</option>
+						<option value="hi">हिन्दी</option>
+						<option value="bn">বাংলা</option>
+					</select>
+				</div>
+			</div>
+		</header>
+
+		<main class="csg-container csg-form">
+			<div class="csg-card">
+				<h2 data-i18n="profile.title">Complete your profile</h2>
+				<form id="profile-form">
+					<label for="fullName" data-i18n="profile.name">Full name</label>
+					<input id="fullName" name="fullName" />
+					<label for="phone" data-i18n="profile.phone">Phone</label>
+					<input id="phone" name="phone" disabled />
+					<label for="address" data-i18n="profile.address">Address</label>
+					<textarea id="address" name="address"></textarea>
+					<label for="pincode" data-i18n="profile.pincode">Pincode</label>
+					<input id="pincode" name="pincode" />
+					<div class="csg-grid">
+						<div>
+							<label for="lat" data-i18n="profile.lat">Latitude</label>
+							<input id="lat" name="lat" />
+						</div>
+						<div>
+							<label for="lng" data-i18n="profile.lng">Longitude</label>
+							<input id="lng" name="lng" />
+						</div>
+					</div>
+					<div class="csg-row">
+						<button class="csg-btn" id="detect-location" type="button" data-i18n="profile.detect">Detect Location</button>
+						<button class="csg-btn csg-btn-primary" type="submit" data-i18n="profile.save">Save</button>
+					</div>
+				</form>
+				<p id="profile-status" class="csg-status"></p>
+			</div>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+		<script src="assets/js/sysenv.js"></script>
+		<script src="assets/js/supabaseClient.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script src="assets/js/profile.js"></script>
+	</body>
+	</html>
+
+

@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom gradients */
+.gradient-bg {
+  @apply bg-gradient-to-r from-purple-500 to-indigo-600 text-white;
+}
+
+/* -----------------------
+   GLOBAL ANIMATIONS
+------------------------ */
+
+.fade-in {
+  animation: fadeIn 0.9s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-up {
+  animation: slideUp 1s ease;
+}
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.float-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.float-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+.gradient-button {
+  @apply bg-gradient-to-r from-green-500 to-blue-600 text-white px-6 py-3 rounded-lg shadow-md transition-all;
+}
+.gradient-button:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+}
+
+.hero-bg {
+  background: linear-gradient(135deg, #0ea5e9, #0d9488);
+}
+
+.reveal { opacity: 0; transform: translateY(18px); transition: all .6s ease; }
+.reveal.show { opacity: 1; transform: translateY(0); }

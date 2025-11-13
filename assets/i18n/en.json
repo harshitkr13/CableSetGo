@@ -1,0 +1,61 @@
+{
+	"nav.login": "Login",
+	"nav.register": "Register",
+	"nav.home": "Home",
+	"nav.language": "Language",
+	"nav.providers": "Providers",
+	"nav.profile": "Profile",
+	"nav.complaints": "Complaints",
+
+	"welcome.title": "Get Local Cable & Services Faster",
+	"welcome.subtitle": "Discover nearby providers, raise complaints, and get quick support.",
+	"welcome.getStarted": "Get Started",
+	"welcome.browse": "Browse Providers",
+	"welcome.featuresTitle": "Why CableSetGo?",
+	"welcome.feature1": "Auto-detect your language by location",
+	"welcome.feature2": "Phone number OTP for secure login",
+	"welcome.feature3": "Find providers within 15 km",
+	"welcome.feature4": "Complaint & feedback with ticket IDs",
+
+	"footer.faq": "FAQ",
+	"footer.terms": "Terms",
+	"footer.privacy": "Privacy",
+
+	"auth.title": "Sign in or create account",
+	"auth.countryCode": "Country code",
+	"auth.phone": "Phone number",
+	"auth.sendOtp": "Send OTP",
+	"auth.otp": "Enter OTP",
+	"auth.verifyOtp": "Verify",
+	"auth.resend": "Resend OTP",
+
+	"profile.title": "Complete your profile",
+	"profile.name": "Full name",
+	"profile.phone": "Phone",
+	"profile.address": "Address",
+	"profile.pincode": "Pincode",
+	"profile.lat": "Latitude",
+	"profile.lng": "Longitude",
+	"profile.detect": "Detect Location",
+	"profile.save": "Save",
+
+	"providers.title": "Local Service Providers",
+	"providers.refresh": "Refresh",
+	"providers.searchPlaceholder": "Search provider or service...",
+
+	"complaints.title": "Complaint or Feedback",
+	"complaints.type": "Type",
+	"complaints.typeComplaint": "Complaint",
+	"complaints.typeFeedback": "Feedback",
+	"complaints.subject": "Subject",
+	"complaints.message": "Message",
+	"complaints.submit": "Submit",
+
+	"admin.users": "Users",
+	"admin.providers": "Providers",
+	"admin.tickets": "Complaints/Feedback",
+
+	"faq.title": "Frequently Asked Questions"
+}
+
+

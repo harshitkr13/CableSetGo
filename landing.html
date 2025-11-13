@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CableSetGo — Providers</title>
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body data-page="landing">
+		<header class="csg-header">
+			<div class="csg-container csg-header-inner">
+				<a class="csg-brand" href="index.html">CableSetGo</a>
+				<nav class="csg-nav">
+					<a href="profile.html" data-i18n="nav.profile">Profile</a>
+					<a href="complaints.html" data-i18n="nav.complaints">Complaints</a>
+				</nav>
+				<div class="csg-lang">
+					<label for="lang-select" data-i18n="nav.language">Language</label>
+					<select id="lang-select">
+						<option value="en">English</option>
+						<option value="hi">हिन्दी</option>
+						<option value="bn">বাংলা</option>
+					</select>
+				</div>
+			</div>
+		</header>
+
+		<main class="csg-container">
+			<section class="csg-card">
+				<h2 data-i18n="providers.title">Local Service Providers</h2>
+				<div class="csg-row">
+					<input id="search-text" placeholder="Search provider or service..." data-i18n-placeholder="providers.searchPlaceholder" />
+					<button id="refresh" class="csg-btn" data-i18n="providers.refresh">Refresh</button>
+				</div>
+				<div id="providers-list" class="csg-list-tiles"></div>
+				<p id="providers-status" class="csg-status"></p>
+			</section>
+
+			<section class="csg-plans">
+				<div class="csg-plans-header">
+					<h2>Popular Plans</h2>
+					<p style="color: rgba(255,255,255,0.78); margin: 0;">Choose a package that fits your home entertainment setup.</p>
+				</div>
+				<div class="csg-plans-grid">
+					<div class="csg-plan-card">
+						<div class="csg-plan-title">Basic Entertainment</div>
+						<div class="csg-plan-badge">SD</div>
+						<div class="csg-plan-price">
+							<div class="csg-plan-amount">₹199</div>
+							<div class="csg-plan-frequency">Monthly</div>
+						</div>
+						<div class="csg-plan-meta">40+ channels • Essentials & news</div>
+						<ul class="csg-plan-list">
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Regional + national news</li>
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Music & lifestyle channels</li>
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Free installation support</li>
+						</ul>
+						<button class="csg-btn csg-plan-cta">View Details</button>
+					</div>
+
+					<div class="csg-plan-card">
+						<div class="csg-plan-title">Family Pack SD</div>
+						<div class="csg-plan-badge">SD</div>
+						<div class="csg-plan-price">
+							<div class="csg-plan-amount">₹249</div>
+							<div class="csg-plan-frequency">Monthly</div>
+						</div>
+						<div class="csg-plan-meta">65+ channels • Family entertainment</div>
+						<ul class="csg-plan-list">
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Kids, infotainment & lifestyle</li>
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Regional language bouquet</li>
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Same-day setup available</li>
+						</ul>
+						<button class="csg-btn csg-plan-cta">View Details</button>
+					</div>
+
+					<div class="csg-plan-card">
+						<div class="csg-plan-title">Premium HD</div>
+						<div class="csg-plan-badge">HD</div>
+						<div class="csg-plan-price">
+							<div class="csg-plan-amount">₹399</div>
+							<div class="csg-plan-frequency">Monthly</div>
+						</div>
+						<div class="csg-plan-meta">80+ channels • HD entertainment</div>
+						<ul class="csg-plan-list">
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Top HD entertainment & drama</li>
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Sports highlights in HD</li>
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Priority customer support</li>
+						</ul>
+						<button class="csg-btn csg-plan-cta">View Details</button>
+					</div>
+
+					<div class="csg-plan-card">
+						<div class="csg-plan-title">Sports Lover HD</div>
+						<div class="csg-plan-badge">HD</div>
+						<div class="csg-plan-price">
+							<div class="csg-plan-amount">₹499</div>
+							<div class="csg-plan-frequency">Monthly</div>
+						</div>
+						<div class="csg-plan-meta">95+ channels • HD sports focus</div>
+						<ul class="csg-plan-list">
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Complete sports bouquet HD</li>
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Live match reminders</li>
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Free seasonal add-ons</li>
+						</ul>
+						<button class="csg-btn csg-plan-cta">View Details</button>
+					</div>
+
+					<div class="csg-plan-card">
+						<div class="csg-plan-title">Ultimate 4K</div>
+						<div class="csg-plan-badge">4K</div>
+						<div class="csg-plan-price">
+							<div class="csg-plan-amount">₹599</div>
+							<div class="csg-plan-frequency">Monthly</div>
+						</div>
+						<div class="csg-plan-meta">110+ channels • Ultra HD</div>
+						<ul class="csg-plan-list">
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Ultra HD sports & movies</li>
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Free 4K set-top upgrade</li>
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Dedicated concierge line</li>
+						</ul>
+						<button class="csg-btn csg-plan-cta">View Details</button>
+					</div>
+
+					<div class="csg-plan-card">
+						<div class="csg-plan-title">Movie Buff 4K</div>
+						<div class="csg-plan-badge">4K</div>
+						<div class="csg-plan-price">
+							<div class="csg-plan-amount">₹699</div>
+							<div class="csg-plan-frequency">Monthly</div>
+						</div>
+						<div class="csg-plan-meta">120+ channels • Cinema first</div>
+						<ul class="csg-plan-list">
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Premiere movie & OTT add-ons</li>
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Dolby Atmos ready bundles</li>
+							<li class="csg-plan-item"><span class="csg-icon-check"></span>Weekend on-demand specials</li>
+						</ul>
+						<button class="csg-btn csg-plan-cta">View Details</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div id="chatbot-root"></div>
+
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+		<script src="assets/js/sysenv.js"></script>
+		<script src="assets/js/supabaseClient.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script src="assets/js/providers.js"></script>
+		<script src="assets/js/chatbot.js"></script>
+	</body>
+	</html>
+
+

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Pack",
+    "price": 199,
+    "description": "80+ Channels | SD Quality"
+  },
+  {
+    "id": 2,
+    "name": "Standard Pack",
+    "price": 299,
+    "description": "120+ Channels | SD + HD"
+  },
+  {
+    "id": 3,
+    "name": "Premium HD Pack",
+    "price": 499,
+    "description": "200+ Channels | HD Quality | Sports + Movies"
+  }
+]

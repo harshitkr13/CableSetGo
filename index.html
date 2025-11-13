@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CableSetGo — Welcome</title>
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	</head>
+	<body data-page="welcome">
+		<header class="csg-navbar">
+			<div class="csg-container">
+				<div class="csg-nav-left">
+					<div class="csg-nav-logo fade-in delay-1">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path d="M4 6.5c0-1.4 1.1-2.5 2.5-2.5h11c1.4 0 2.5 1.1 2.5 2.5v11c0 1.4-1.1 2.5-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5v-11Zm3.5-.5a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-.5-.5h-9Zm1 12.5h7l-1.4 2.1a1 1 0 0 1-.83.44h-2.54a1 1 0 0 1-.83-.44L8.5 18.5Z" />
+						</svg>
+					</div>
+					<span class="fade-in delay-2">CableSetGo</span>
+				</div>
+				<button class="csg-nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+					<svg viewBox="0 0 24 24" aria-hidden="true">
+						<path d="M4 6h16v2H4V6Zm0 5h16v2H4v-2Zm0 5h16v2H4v-2Z" />
+					</svg>
+				</button>
+				<nav class="csg-nav-center" id="nav-menu">
+					<a href="#plans">Plans</a>
+					<a href="#availability">Check Availability</a>
+					<a href="#support">Support</a>
+				</nav>
+				<div class="csg-nav-actions">
+					<div class="csg-user-icon">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path d="M12 2a5 5 0 0 1 3.54 8.54A5 5 0 0 1 12 2Zm0 12c3.31 0 6 2.02 6 4.5V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-1.5C6 16.02 8.69 14 12 14Z" />
+						</svg>
+					</div>
+					<a class="csg-btn csg-btn-outline" href="auth.html">Login</a>
+					<a class="csg-btn csg-btn-primary" href="auth.html#register"><span>Get Started</span></a>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="csg-hero" id="availability">
+				<div class="csg-container">
+					<div class="csg-tagline-pill fade-in delay-1">
+						<svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16">
+							<path fill="#fff" d="M12 3c5.52 0 9 3.48 9 7.78 0 2.65-1.57 4.98-4.02 6.28l.48 2.44a1 1 0 0 1-1.51 1.05L12 18.72l-3.95 1.83a1 1 0 0 1-1.51-1.05l.48-2.44C4.57 15.76 3 13.43 3 10.78 3 6.48 6.48 3 12 3Z" />
+						</svg>
+						<span>Welcome to the Future of Cable TV</span>
+					</div>
+					<h1 class="csg-hero-heading fade-in delay-2">
+						Your Cable Service,<br />
+						Simplified &amp; Digital
+					</h1>
+					<p class="csg-hero-subtitle fade-in delay-3">
+						Browse plans, manage subscriptions, and get support – all in one place. No more dependency on local operators.
+					</p>
+					<form class="csg-search fade-in delay-4">
+						<input type="text" placeholder="Enter your pincode" aria-label="Enter your pincode" />
+						<button type="submit" class="csg-btn csg-btn-primary">Check Availability</button>
+					</form>
+					<span class="csg-scroll-hint fade-in delay-5">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="#fff" d="M12 4a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.42L11 14.59V5a1 1 0 0 1 1-1Z" />
+						</svg>
+						Discover plans &amp; features below
+					</span>
+				</div>
+			</section>
+
+			<section class="csg-section csg-section-light" id="plans">
+				<div class="csg-container fade-in">
+					<div class="csg-plans">
+						<div class="csg-plans-header">
+							<h2>Choose Your Perfect Plan</h2>
+							<p>Flexible cable plans tailored for every home. Upgrade anytime with instant activation.</p>
+						</div>
+						<div class="csg-plans-grid">
+							<article class="csg-plan-card fade-in delay-1">
+								<div class="csg-plan-title">Basic Entertainment</div>
+								<div class="csg-plan-badge">SD</div>
+								<div class="csg-plan-price">
+									<div class="csg-plan-amount">₹199</div>
+									<div class="csg-plan-frequency">per month</div>
+								</div>
+								<div class="csg-plan-meta">120+ Channels</div>
+								<ul class="csg-plan-list">
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Regional &amp; national news</li>
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Essential entertainment</li>
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Free installation support</li>
+								</ul>
+								<button class="csg-btn csg-plan-cta">View Details</button>
+							</article>
+
+							<article class="csg-plan-card fade-in delay-2">
+								<div class="csg-plan-title">Family Pack SD</div>
+								<div class="csg-plan-badge">SD</div>
+								<div class="csg-plan-price">
+									<div class="csg-plan-amount">₹249</div>
+									<div class="csg-plan-frequency">per month</div>
+								</div>
+								<div class="csg-plan-meta">150+ Channels</div>
+								<ul class="csg-plan-list">
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Kids &amp; infotainment bouquet</li>
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Regional language packs</li>
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Same-day setup options</li>
+								</ul>
+								<button class="csg-btn csg-plan-cta">View Details</button>
+							</article>
+
+							<article class="csg-plan-card fade-in delay-3">
+								<div class="csg-plan-title">Premium HD</div>
+								<div class="csg-plan-badge">HD</div>
+								<div class="csg-plan-price">
+									<div class="csg-plan-amount">₹399</div>
+									<div class="csg-plan-frequency">per month</div>
+								</div>
+								<div class="csg-plan-meta">180+ Channels</div>
+								<ul class="csg-plan-list">
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Top HD entertainment</li>
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>HD sports highlights</li>
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Priority customer support</li>
+								</ul>
+								<button class="csg-btn csg-plan-cta">View Details</button>
+							</article>
+
+							<article class="csg-plan-card fade-in delay-1">
+								<div class="csg-plan-title">Sports Lover HD</div>
+								<div class="csg-plan-badge">HD</div>
+								<div class="csg-plan-price">
+									<div class="csg-plan-amount">₹499</div>
+									<div class="csg-plan-frequency">per month</div>
+								</div>
+								<div class="csg-plan-meta">200+ Channels</div>
+								<ul class="csg-plan-list">
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Complete sports bouquet</li>
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Live match notifications</li>
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Seasonal add-on rewards</li>
+								</ul>
+								<button class="csg-btn csg-plan-cta">View Details</button>
+							</article>
+
+							<article class="csg-plan-card fade-in delay-2">
+								<div class="csg-plan-title">Ultimate 4K</div>
+								<div class="csg-plan-badge">4K</div>
+								<div class="csg-plan-price">
+									<div class="csg-plan-amount">₹599</div>
+									<div class="csg-plan-frequency">per month</div>
+								</div>
+								<div class="csg-plan-meta">250+ Channels</div>
+								<ul class="csg-plan-list">
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Ultra HD sports &amp; movies</li>
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Free 4K set-top upgrade</li>
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Dedicated concierge line</li>
+								</ul>
+								<button class="csg-btn csg-plan-cta">View Details</button>
+							</article>
+
+							<article class="csg-plan-card fade-in delay-3">
+								<div class="csg-plan-title">Movie Buff 4K</div>
+								<div class="csg-plan-badge">4K</div>
+								<div class="csg-plan-price">
+									<div class="csg-plan-amount">₹699</div>
+									<div class="csg-plan-frequency">per month</div>
+								</div>
+								<div class="csg-plan-meta">220+ Channels</div>
+								<ul class="csg-plan-list">
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Premiere movie bouquet</li>
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Dolby Atmos ready bundles</li>
+									<li class="csg-plan-item"><span class="csg-icon-check" aria-hidden="true"></span>Weekend on-demand specials</li>
+								</ul>
+								<button class="csg-btn csg-plan-cta">View Details</button>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="csg-section" id="support">
+				<div class="csg-container fade-in">
+					<h2 class="csg-section-title">Everything You Need in One Place</h2>
+					<p class="csg-section-subtitle">Experience the future of cable TV management with our comprehensive platform</p>
+					<div class="csg-features-grid">
+						<article class="csg-feature-card fade-in delay-1">
+							<div class="csg-feature-icon">
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M4 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3h-3.59l1.3 1.3a1 1 0 1 1-1.42 1.4l-3-3a1 1 0 0 1 0-1.4l3-3a1 1 0 0 1 1.42 1.4L13.41 17H17a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h2a1 1 0 1 1 0 2H7a3 3 0 0 1-3-3V5Z" />
+								</svg>
+							</div>
+							<h3 class="csg-feature-title">Browse &amp; Compare Plans</h3>
+							<p class="csg-feature-desc">Explore hundreds of cable and DTH plans. Compare channels, pricing, and features side-by-side.</p>
+						</article>
+
+						<article class="csg-feature-card fade-in delay-2">
+							<div class="csg-feature-icon">
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M4 7a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V7Zm4-2a2 2 0 0 0-2 2v1h12V7a2 2 0 0 0-2-2H8Zm10 5H6v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7Zm-6 5a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2h-2Z" />
+								</svg>
+							</div>
+							<h3 class="csg-feature-title">Secure Payments</h3>
+							<p class="csg-feature-desc">Multiple payment options including UPI, cards, wallets, and net banking. All transactions are encrypted.</p>
+						</article>
+
+						<article class="csg-feature-card fade-in delay-3">
+							<div class="csg-feature-icon">
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M4 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H9.41l-3.7 3.7A1 1 0 0 1 4 19.7V5Zm3-1a1 1 0 0 0-1 1v11.59l2.3-2.3a1 1 0 0 1 .7-.29H17a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7Z" />
+								</svg>
+							</div>
+							<h3 class="csg-feature-title">24/7 Support</h3>
+							<p class="csg-feature-desc">Get instant help through our AI chatbot or connect with live agents anytime, anywhere.</p>
+						</article>
+
+						<article class="csg-feature-card fade-in delay-1">
+							<div class="csg-feature-icon">
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M12 2a5 5 0 0 1 5 5v1h1a3 3 0 0 1 3 3v5a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6v-5a3 3 0 0 1 3-3h1V7a5 5 0 0 1 5-5Zm-3 6v1h6V8a3 3 0 1 0-6 0Zm9 3h-1v1a1 1 0 0 1-2 0v-1H9v1a1 1 0 1 1-2 0v-1H6a1 1 0 0 0-1 1v5a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4v-5a1 1 0 0 0-1-1Z" />
+								</svg>
+							</div>
+							<h3 class="csg-feature-title">No LCO Dependency</h3>
+							<p class="csg-feature-desc">Manage your subscription directly. No more waiting for local operators or intermediaries.</p>
+						</article>
+
+						<article class="csg-feature-card fade-in delay-2">
+							<div class="csg-feature-icon">
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M12 2a7 7 0 0 1 7 7v2.17a3 3 0 0 1 .88 2.11l-.03 4.2A2.52 2.52 0 0 1 17.33 20h-.58a3 3 0 0 1-2.48 1.5h-4.54A3 3 0 0 1 7.25 20H6.7a2.52 2.52 0 0 1-2.52-2.52l-.03-4.2A3 3 0 0 1 5 11.17V9a7 7 0 0 1 7-7Zm5 9.35V9a5 5 0 0 0-10 0v2.35A3 3 0 0 1 8 12.7v2.52a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V12.7a3 3 0 0 1 1-1.35Z" />
+								</svg>
+							</div>
+							<h3 class="csg-feature-title">Instant Activation</h3>
+							<p class="csg-feature-desc">Subscribe to plans and get instant activation. Real-time updates on your subscription status.</p>
+						</article>
+
+						<article class="csg-feature-card fade-in delay-3">
+							<div class="csg-feature-icon">
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M7 2h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-1h-4a3 3 0 0 1-3-3v-1a3 3 0 0 1 3-3h4V5a1 1 0 0 0-1-1H7Zm6 9v1a1 1 0 0 0 1 1h4v-3h-4a1 1 0 0 0-1 1Zm-3-6h4a1 1 0 1 1 0 2H10a1 1 0 1 1 0-2Z" />
+								</svg>
+							</div>
+							<h3 class="csg-feature-title">Mobile &amp; Web Access</h3>
+							<p class="csg-feature-desc">Access your account from any device. Manage subscriptions on the go with our mobile app.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="csg-footer">
+			<div class="csg-container">
+				<div class="csg-footer-top">
+					<div class="csg-footer-brand">
+						<div class="csg-nav-left">
+							<div class="csg-nav-logo">
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M4 6.5c0-1.4 1.1-2.5 2.5-2.5h11c1.4 0 2.5 1.1 2.5 2.5v11c0 1.4-1.1 2.5-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5v-11Zm3.5-.5a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-.5-.5h-9Zm1 12.5h7l-1.4 2.1a1 1 0 0 1-.83.44h-2.54a1 1 0 0 1-.83-.44L8.5 18.5Z" />
+								</svg>
+							</div>
+							<span>CableSetGo</span>
+						</div>
+						<p>Your trusted partner for cable TV services. Experience digital transformation in entertainment.</p>
+					</div>
+					<div>
+						<div class="csg-footer-title">Quick Links</div>
+						<div class="csg-footer-links">
+							<a href="#plans">Browse Plans</a>
+							<a href="#availability">Check Availability</a>
+							<a href="#support">Support</a>
+							<a href="faq.html">About Us</a>
+						</div>
+					</div>
+					<div>
+						<div class="csg-footer-title">Support</div>
+						<div class="csg-footer-links">
+							<a href="faq.html">FAQ</a>
+							<a href="complaints.html">Complaints</a>
+							<a href="terms.html">Terms &amp; Conditions</a>
+							<a href="privacy.html">Privacy Policy</a>
+						</div>
+					</div>
+					<div>
+						<div class="csg-footer-title">Contact Us</div>
+						<div class="csg-footer-links">
+							<span>Email: support@cablesetgo.com</span>
+							<span>Phone: 7301172455</span>
+							<span>Location: Keshtopur, Kolkata, India</span>
+						</div>
+					</div>
+				</div>
+				<div class="csg-footer-bottom">© 2025 CableSetGo. All rights reserved.</div>
+			</div>
+		</footer>
+
+		<div id="chatbot-root"></div>
+
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+		<script src="assets/js/sysenv.js"></script>
+		<script src="assets/js/supabaseClient.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script src="assets/js/chatbot.js"></script>
+	</body>
+</html>

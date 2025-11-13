@@ -1,0 +1,61 @@
+{
+	"nav.login": "लॉगिन",
+	"nav.register": "रजिस्टर",
+	"nav.home": "होम",
+	"nav.language": "भाषा",
+	"nav.providers": "प्रोवाइडर्स",
+	"nav.profile": "प्रोफाइल",
+	"nav.complaints": "शिकायतें",
+
+	"welcome.title": "स्थानीय केबल और सेवाएँ तेज़ी से पाएं",
+	"welcome.subtitle": "पास के प्रोवाइडर्स खोजें, शिकायतें दर्ज करें, और त्वरित सहायता पाएं।",
+	"welcome.getStarted": "शुरू करें",
+	"welcome.browse": "प्रोवाइडर्स देखें",
+	"welcome.featuresTitle": "क्यों CableSetGo?",
+	"welcome.feature1": "स्थान के आधार पर भाषा ऑटो-डिटेक्ट",
+	"welcome.feature2": "सुरक्षित लॉगिन के लिए फ़ोन OTP",
+	"welcome.feature3": "15 किमी के भीतर प्रोवाइडर्स खोजें",
+	"welcome.feature4": "टिकट ID के साथ शिकायत/फीडबैक",
+
+	"footer.faq": "सामान्य प्रश्न",
+	"footer.terms": "नियम",
+	"footer.privacy": "गोपनीयता",
+
+	"auth.title": "साइन इन करें या अकाउंट बनाएँ",
+	"auth.countryCode": "देश का कोड",
+	"auth.phone": "फ़ोन नंबर",
+	"auth.sendOtp": "OTP भेजें",
+	"auth.otp": "OTP दर्ज करें",
+	"auth.verifyOtp": "वेरिफाई",
+	"auth.resend": "OTP पुनः भेजें",
+
+	"profile.title": "अपनी प्रोफाइल पूरी करें",
+	"profile.name": "पूरा नाम",
+	"profile.phone": "फ़ोन",
+	"profile.address": "पता",
+	"profile.pincode": "पिनकोड",
+	"profile.lat": "अक्षांश",
+	"profile.lng": "देशांतर",
+	"profile.detect": "लोकेशन डिटेक्ट करें",
+	"profile.save": "सेव करें",
+
+	"providers.title": "स्थानीय सेवा प्रदाता",
+	"providers.refresh": "रीफ्रेश",
+	"providers.searchPlaceholder": "प्रोवाइडर या सेवा खोजें...",
+
+	"complaints.title": "शिकायत या फीडबैक",
+	"complaints.type": "प्रकार",
+	"complaints.typeComplaint": "शिकायत",
+	"complaints.typeFeedback": "फीडबैक",
+	"complaints.subject": "विषय",
+	"complaints.message": "संदेश",
+	"complaints.submit": "सबमिट करें",
+
+	"admin.users": "यूज़र्स",
+	"admin.providers": "प्रोवाइडर्स",
+	"admin.tickets": "शिकायतें/फीडबैक",
+
+	"faq.title": "अक्सर पूछे जाने वाले प्रश्न"
+}
+
+

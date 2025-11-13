@@ -1,0 +1,61 @@
+{
+	"nav.login": "লগইন",
+	"nav.register": "রেজিস্টার",
+	"nav.home": "হোম",
+	"nav.language": "ভাষা",
+	"nav.providers": "প্রোভাইডার",
+	"nav.profile": "প্রোফাইল",
+	"nav.complaints": "অভিযোগ",
+
+	"welcome.title": "লোকাল কেবল ও সার্ভিস দ্রুত পান",
+	"welcome.subtitle": "কাছাকাছি প্রোভাইডার খুঁজুন, অভিযোগ করুন, দ্রুত সহায়তা পান।",
+	"welcome.getStarted": "শুরু করুন",
+	"welcome.browse": "প্রোভাইডার দেখুন",
+	"welcome.featuresTitle": "কেন CableSetGo?",
+	"welcome.feature1": "লোকেশন অনুযায়ী ভাষা অটো-ডিটেক্ট",
+	"welcome.feature2": "নিরাপদ লগইনের জন্য ফোন OTP",
+	"welcome.feature3": "১৫ কিমির মধ্যে প্রোভাইডার খুঁজুন",
+	"welcome.feature4": "টিকিট আইডিসহ অভিযোগ/ফিডব্যাক",
+
+	"footer.faq": "প্রশ্নোত্তর",
+	"footer.terms": "শর্তাবলী",
+	"footer.privacy": "গোপনীয়তা",
+
+	"auth.title": "সাইন ইন বা অ্যাকাউন্ট তৈরি করুন",
+	"auth.countryCode": "দেশ কোড",
+	"auth.phone": "ফোন নম্বর",
+	"auth.sendOtp": "OTP পাঠান",
+	"auth.otp": "OTP দিন",
+	"auth.verifyOtp": "ভেরিফাই",
+	"auth.resend": "OTP আবার পাঠান",
+
+	"profile.title": "আপনার প্রোফাইল সম্পূর্ণ করুন",
+	"profile.name": "পূর্ণ নাম",
+	"profile.phone": "ফোন",
+	"profile.address": "ঠিকানা",
+	"profile.pincode": "পিনকোড",
+	"profile.lat": "অক্ষাংশ",
+	"profile.lng": "দ্রাঘিমাংশ",
+	"profile.detect": "লোকেশন ডিটেক্ট করুন",
+	"profile.save": "সেভ করুন",
+
+	"providers.title": "লোকাল সার্ভিস প্রোভাইডার",
+	"providers.refresh": "রিফ্রেশ",
+	"providers.searchPlaceholder": "প্রোভাইডার বা সার্ভিস খুঁজুন...",
+
+	"complaints.title": "অভিযোগ বা ফিডব্যাক",
+	"complaints.type": "ধরন",
+	"complaints.typeComplaint": "অভিযোগ",
+	"complaints.typeFeedback": "ফিডব্যাক",
+	"complaints.subject": "বিষয়",
+	"complaints.message": "বার্তা",
+	"complaints.submit": "সাবমিট",
+
+	"admin.users": "ইউজার",
+	"admin.providers": "প্রোভাইডার",
+	"admin.tickets": "অভিযোগ/ফিডব্যাক",
+
+	"faq.title": "প্রায়শই জিজ্ঞাসিত প্রশ্ন"
+}
+
+
