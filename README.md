@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CableSetGo (HTML/CSS/JS + Supabase)
 ===================================
 
@@ -108,3 +109,7 @@ Notes
 - Admin page is read-only here; add role checks and mutations as needed.
 
 
+=======
+# CableSetGo
+CableSetGo is a full-stack web application built with React and backend integration, offering seamless user authentication, service requests, and support features.
+>>>>>>> 0680e2149a3c630133eb66f4edd50edc95c2e8fa
