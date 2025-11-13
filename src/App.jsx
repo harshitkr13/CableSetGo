@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 // Core layout
 import Navbar from "./components/Navbar";
@@ -24,14 +24,15 @@ import Complaint from "./pages/Complaint";
 import Profile from "./pages/Profile";
 import AdminPanel from "./pages/AdminPanel";
 import Help from "./pages/Help";
-import NotFound from "./pages/NotFound"; // NEW
+import NotFound from "./pages/NotFound";
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+  const showChatBot = location.pathname === "/dashboard";
+
   return (
-    <Router>
-      <Navbar />
-
-      <div className="min-h-screen mt-16 p-4">
+    <>
+      <div className="min-h-screen pt-16">
         <Routes>
           <Route path="/" element={<Greeting />} />
           <Route path="/language" element={<LanguageSelect />} />
@@ -57,8 +58,17 @@ function App() {
 
       <Footer />
 
-      {/* Floating chat widget (mounted once here) */}
-      <ChatBot />
+      {/* Floating chat widget - only on Dashboard */}
+      {showChatBot && <ChatBot />}
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <AppContent />
     </Router>
   );
 }

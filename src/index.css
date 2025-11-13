@@ -2,9 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Modern Dark Theme Variables */
+:root {
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  --secondary-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --accent-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  --dark-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  --light-bg: #0f172a;
+  --card-bg: #1e293b;
+  --card-bg-hover: #334155;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-color: rgba(148, 163, 184, 0.2);
+  --border-hover: rgba(148, 163, 184, 0.4);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 20px rgba(102, 126, 234, 0.3);
+}
+
+* {
+  @apply transition-colors duration-200;
+}
+
+body {
+  @apply min-h-screen;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #1e1b4b 60%, #312e81 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+}
+
 /* Custom gradients */
 .gradient-bg {
-  @apply bg-gradient-to-r from-purple-500 to-indigo-600 text-white;
+  background: var(--primary-gradient);
+  @apply text-white;
+}
+
+.gradient-primary {
+  background: var(--primary-gradient);
+}
+
+.gradient-secondary {
+  background: var(--secondary-gradient);
+}
+
+.gradient-accent {
+  background: var(--accent-gradient);
 }
 
 /* -----------------------
@@ -28,24 +73,56 @@
 }
 
 .float-card {
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  @apply rounded-2xl shadow-xl border;
+  background: var(--card-bg);
+  border-color: var(--border-color);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.4s ease,
+              background 0.4s ease;
 }
 .float-card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: var(--shadow-xl), var(--shadow-glow);
+  border-color: rgba(102, 126, 234, 0.5);
+  background: var(--card-bg-hover);
 }
 
 .gradient-button {
-  @apply bg-gradient-to-r from-green-500 to-blue-600 text-white px-6 py-3 rounded-lg shadow-md transition-all;
+  background: var(--primary-gradient);
+  @apply text-white px-6 py-3 rounded-xl shadow-lg transition-all font-semibold;
 }
 .gradient-button:hover {
   filter: brightness(1.1);
   transform: scale(1.05);
+  box-shadow: 0 10px 25px -5px rgba(102, 126, 234, 0.4);
 }
 
 .hero-bg {
-  background: linear-gradient(135deg, #0ea5e9, #0d9488);
+  background: var(--primary-gradient);
 }
 
-.reveal { opacity: 0; transform: translateY(18px); transition: all .6s ease; }
-.reveal.show { opacity: 1; transform: translateY(0); }
+.reveal { 
+  opacity: 0; 
+  transform: translateY(18px); 
+  transition: all .6s ease; 
+}
+.reveal.show { 
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+/* Modern Card Styles */
+.modern-card {
+  @apply rounded-2xl shadow-xl p-6 border;
+  background: var(--card-bg);
+  border-color: var(--border-color);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modern-card:hover {
+  box-shadow: var(--shadow-xl), var(--shadow-glow);
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+  background: var(--card-bg-hover);
+}
