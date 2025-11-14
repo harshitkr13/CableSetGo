@@ -26,6 +26,13 @@ import AdminPanel from "./pages/adminPanel";
 import Help from "./pages/help";
 import NotFound from "./pages/notFound";
 
+// Newly added informational pages
+import Faq from "./pages/faq";
+import Complaints from "./pages/complaints";
+import Terms from "./pages/terms";
+import Privacy from "./pages/privacy";
+import About from "./pages/about";
+
 function AppContent() {
   const location = useLocation();
   const showChatBot = location.pathname === "/dashboard";
@@ -34,6 +41,7 @@ function AppContent() {
     <>
       <div className="min-h-screen pt-16">
         <Routes>
+          {/* Main routes */}
           <Route path="/" element={<Greeting />} />
           <Route path="/language" element={<LanguageSelect />} />
           <Route path="/login" element={<Login />} />
@@ -50,6 +58,13 @@ function AppContent() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/admin" element={<AdminPanel />} />
           <Route path="/help" element={<Help />} />
+
+          {/* New pages */}
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/complaints" element={<Complaints />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/about" element={<About />} />
 
           {/* Catch-all 404 */}
           <Route path="*" element={<NotFound />} />
