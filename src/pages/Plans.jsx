@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import mockServer from "../mockApi/mockServer";
-import PlanCard from "../components/PlanCard";
-import Skeleton from "../components/Skeleton";
+import PlanCard from "../components/planCard";
+import Skeleton from "../components/skeleton";
 import useRevealOnScroll from "../utils/useRevealOnScroll";
 
 function Plans() {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import mockServer from "../mockApi/mockServer";
 import { MdMovie, MdSportsSoccer, MdChildCare } from "react-icons/md";
-import Skeleton from "../components/Skeleton";
+import Skeleton from "../components/skeleton";
 import useRevealOnScroll from "../utils/useRevealOnScroll";
 
 function AddOns() {

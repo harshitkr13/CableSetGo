@@ -3,28 +3,28 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 // Core layout
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ChatBot from "./components/ChatBot";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import ChatBot from "./components/chatBot";
 
 // Pages
-import Greeting from "./pages/Greeting";
-import LanguageSelect from "./pages/LanguageSelect";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
-import ServiceCheck from "./pages/ServiceCheck";
-import Plans from "./pages/Plans";
-import ComparePlans from "./pages/ComparePlans";
-import AddOns from "./pages/AddOns";
-import Payments from "./pages/Payments";
-import Invoice from "./pages/Invoice";
-import History from "./pages/History";
-import Complaint from "./pages/Complaint";
-import Profile from "./pages/Profile";
-import AdminPanel from "./pages/AdminPanel";
-import Help from "./pages/Help";
-import NotFound from "./pages/NotFound";
+import Greeting from "./pages/greeting";
+import LanguageSelect from "./pages/languageSelect";
+import Login from "./pages/login";
+import Register from "./pages/register";
+import Dashboard from "./pages/dashboard";
+import ServiceCheck from "./pages/serviceCheck";
+import Plans from "./pages/plans";
+import ComparePlans from "./pages/comparePlans";
+import AddOns from "./pages/addOns";
+import Payments from "./pages/payments";
+import Invoice from "./pages/invoice";
+import History from "./pages/history";
+import Complaint from "./pages/complaint";
+import Profile from "./pages/profile";
+import AdminPanel from "./pages/adminPanel";
+import Help from "./pages/help";
+import NotFound from "./pages/notFound";
 
 function AppContent() {
   const location = useLocation();
