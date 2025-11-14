@@ -3,7 +3,7 @@ import { MdChat, MdClose, MdSend, MdDragIndicator } from "react-icons/md";
 
 // Use the latest Gemini model - gemini-1.5-flash is faster and more reliable
 // Available models: gemini-1.5-flash, gemini-1.5-pro, gemini-pro
-const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
+const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=YOUR_API_KEY";
 
 function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
