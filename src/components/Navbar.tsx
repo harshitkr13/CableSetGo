@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Tv } from "lucide-react";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,11 +30,12 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
                 {link.label}
               </Link>
             ))}
+            <ThemeSwitcher />
             <Link to="/auth">
               <Button>Get Started</Button>
             </Link>
@@ -53,11 +55,15 @@ const Navbar = () => {
                     key={link.to}
                     to={link.to}
                     onClick={() => setIsOpen(false)}
-                    className="text-lg font-medium hover:text-primary transition-colors"
+                    className="text-lg font-medium text-foreground hover:text-primary transition-colors"
                   >
                     {link.label}
                   </Link>
                 ))}
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-muted-foreground">Theme:</span>
+                  <ThemeSwitcher />
+                </div>
                 <Link to="/auth" onClick={() => setIsOpen(false)}>
                   <Button className="w-full">Get Started</Button>
                 </Link>

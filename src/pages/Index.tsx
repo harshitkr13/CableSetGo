@@ -39,16 +39,16 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-hero">
+    <div className="min-h-screen bg-gradient-animated">
       <Navbar />
       
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto space-y-6">
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight text-foreground animate-float">
             Welcome to <span className="text-primary">CableSetGo</span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-foreground/90 max-w-2xl mx-auto">
             Experience premium cable TV and lightning-fast internet with seamless installation
             in just 30 hours. Your entertainment, our priority.
           </p>
@@ -70,8 +70,8 @@ const Index = () => {
       {/* Features Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose CableSetGo?</h2>
-          <p className="text-muted-foreground text-lg">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Why Choose CableSetGo?</h2>
+          <p className="text-foreground/80 text-lg">
             We deliver more than just connectivity - we deliver excellence
           </p>
         </div>
@@ -92,7 +92,7 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-16">
-        <Card className="max-w-4xl mx-auto shadow-lg bg-gradient-primary text-primary-foreground">
+        <Card className="max-w-4xl mx-auto shadow-lg bg-gradient-primary text-primary-foreground border-0">
           <CardContent className="p-12 text-center space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold">Ready to Get Started?</h2>
             <p className="text-lg opacity-90 max-w-2xl mx-auto">
@@ -116,7 +116,7 @@ const Index = () => {
               <Tv className="h-6 w-6 text-primary" />
               <span>CableSetGo</span>
             </div>
-            <div className="flex gap-6 text-sm text-muted-foreground">
+            <div className="flex gap-6 text-sm text-foreground/80">
               <Link to="/faq" className="hover:text-primary transition-colors">
                 FAQ
               </Link>
@@ -127,7 +127,7 @@ const Index = () => {
                 Complaints
               </Link>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-foreground/60">
               © 2024 CableSetGo. All rights reserved.
             </p>
           </div>
