@@ -1,4 +1,4 @@
-# 🚀 Easy Cable Hub
+# 🚀 CableSetGo
 
 A modern web application built using React, TypeScript, Vite, Tailwind CSS, and shadcn/ui.
 Deployed on Vercel.
